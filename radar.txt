@@ -1,0 +1,37 @@
+# vim: ft=yaml:ts=2:sw=2:expandtab
+defaults:
+  priority:  2
+  milestone: Future
+branches:
+  master:
+    events:
+      push:
+        :state: Integrate
+        :resolution: Software Changed
+      pull_request:
+        :state: Analyze
+        :substate: Review
+  develop:
+    events:
+      push:
+        :state: Integrate
+        :resolution: Software Changed
+      pull_request:
+        :state: Analyze
+        :substate: Review
+  19.02.01.01:
+    events:
+      push:
+        :state: Integrate
+        :resolution: Software Changed
+      pull_request:
+        :state: Analyze
+        :substate: Review
+  19.02.01:
+    events:
+      push:
+        :state: Integrate
+        :resolution: Software Changed
+      pull_request:
+        :state: Analyze
+        :substate: Review
